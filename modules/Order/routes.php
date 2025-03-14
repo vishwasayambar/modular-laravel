@@ -2,4 +2,4 @@
 
 use Illuminate\Support\Facades\Route;
 
-Route::get('test', fn() => 'Hello World');
+Route::get('testOrderModule', fn() => 'Hello World');
