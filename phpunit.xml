@@ -12,7 +12,9 @@
             <directory>tests/Feature</directory>
         </testsuite>
         <testsuite name="Modules">
-            <directory>./modules/Order/Test</directory>
+<!--            <directory>./modules/Order/Test</directory> -->
+<!--            Like this you have to specify the path for all module instead you can do wildcard like below-->
+            <directory>./modules/*/Test</directory>
         </testsuite>
     </testsuites>
     <source>
