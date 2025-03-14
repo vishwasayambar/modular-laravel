@@ -11,10 +11,10 @@ class OrderServiceProvider extends ServiceProvider
      */
     public function register(): void
     {
-        $this->loadMigrationsFrom(__DIR__ . '/../Database/Migrations');
+        $this->loadMigrationsFrom(__DIR__ . '/../Database/migrations');
         $this->mergeConfigFrom(__DIR__ . '/../config.php', 'order');
 
-        $this->app->register(RouteServiceProvider::class);
+        app()->register(RouteServiceProvider::class);
     }
 
     /**
